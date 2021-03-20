@@ -89,6 +89,61 @@
                     <view key="view" contentMode="scaleToFill" id="5gi-td-ljj">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gBW-wz-ln8">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="448" id="Rlz-2R-yCc" customClass="PostCell" customModule="Parstagram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="390" height="448"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rlz-2R-yCc" id="Hzt-PH-YLN">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="448"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LSy-Z8-mcH">
+                                                    <rect key="frame" x="8" y="8" width="374" height="403"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="LSy-Z8-mcH" secondAttribute="height" multiplier="374:403" id="Ulg-dg-eTz"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Erin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhM-dx-AHP">
+                                                    <rect key="frame" x="8" y="419" width="29" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Wow, I love photos!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G9A-KT-QpS">
+                                                    <rect key="frame" x="45" y="419" width="337" height="20.333333333333314"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="G9A-KT-QpS" firstAttribute="leading" secondItem="uhM-dx-AHP" secondAttribute="trailing" constant="8" id="9cN-6Q-rzJ"/>
+                                                <constraint firstAttribute="trailing" secondItem="G9A-KT-QpS" secondAttribute="trailing" constant="8" id="A85-Lk-WAJ"/>
+                                                <constraint firstItem="G9A-KT-QpS" firstAttribute="top" secondItem="LSy-Z8-mcH" secondAttribute="bottom" constant="8" id="A8c-Vz-Iib"/>
+                                                <constraint firstItem="G9A-KT-QpS" firstAttribute="top" secondItem="LSy-Z8-mcH" secondAttribute="bottom" constant="8" id="AGG-aU-mdt"/>
+                                                <constraint firstItem="uhM-dx-AHP" firstAttribute="top" secondItem="LSy-Z8-mcH" secondAttribute="bottom" constant="8" id="GFd-HK-dtx"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="G9A-KT-QpS" secondAttribute="bottom" constant="8" id="HoW-ph-eyx"/>
+                                                <constraint firstItem="G9A-KT-QpS" firstAttribute="leading" secondItem="uhM-dx-AHP" secondAttribute="trailing" constant="8" id="LrX-cL-wSV"/>
+                                                <constraint firstItem="LSy-Z8-mcH" firstAttribute="leading" secondItem="Hzt-PH-YLN" secondAttribute="leading" constant="8" id="Rcu-yG-n6Z"/>
+                                                <constraint firstItem="uhM-dx-AHP" firstAttribute="leading" secondItem="Hzt-PH-YLN" secondAttribute="leading" constant="8" id="hYY-NM-vMf"/>
+                                                <constraint firstAttribute="trailing" secondItem="LSy-Z8-mcH" secondAttribute="trailing" constant="8" id="qYz-ld-5Gv"/>
+                                                <constraint firstItem="LSy-Z8-mcH" firstAttribute="top" secondItem="Hzt-PH-YLN" secondAttribute="top" constant="8" id="xzg-ff-Hcp"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="captionLabel" destination="G9A-KT-QpS" id="rRX-b5-XXS"/>
+                                            <outlet property="photoView" destination="LSy-Z8-mcH" id="Sac-3s-XbL"/>
+                                            <outlet property="usernameLabel" destination="G9A-KT-QpS" id="DdM-4C-GAq"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="g81-yt-7c9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -99,10 +154,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="gBW-wz-ln8" id="czp-VX-4aX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EZF-lq-kgu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1427.536231884058" y="79.6875"/>
+            <point key="canvasLocation" x="1426.1538461538462" y="79.620853080568722"/>
         </scene>
         <!--Camera View Controller-->
         <scene sceneID="Ppu-PX-TVp">

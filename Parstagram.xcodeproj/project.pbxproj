@@ -10,6 +10,7 @@
 		3B0F690E2605C1E2004FD515 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0F690D2605C1E2004FD515 /* LoginViewController.swift */; };
 		3B0F69112605C1F2004FD515 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0F69102605C1F2004FD515 /* FeedViewController.swift */; };
 		3B0F691B2605C9DA004FD515 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0F691A2605C9DA004FD515 /* CameraViewController.swift */; };
+		3B0F691E2605D742004FD515 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0F691D2605D742004FD515 /* PostCell.swift */; };
 		3BF58C172605BF9A006DB826 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF58C162605BF9A006DB826 /* AppDelegate.swift */; };
 		3BF58C192605BF9A006DB826 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF58C182605BF9A006DB826 /* SceneDelegate.swift */; };
 		3BF58C1E2605BF9A006DB826 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF58C1C2605BF9A006DB826 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 		3B0F690D2605C1E2004FD515 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3B0F69102605C1F2004FD515 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		3B0F691A2605C9DA004FD515 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		3B0F691D2605D742004FD515 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		3BF58C132605BF9A006DB826 /* Parstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF58C162605BF9A006DB826 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BF58C182605BF9A006DB826 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				3B0F690D2605C1E2004FD515 /* LoginViewController.swift */,
 				3B0F69102605C1F2004FD515 /* FeedViewController.swift */,
 				3B0F691A2605C9DA004FD515 /* CameraViewController.swift */,
+				3B0F691D2605D742004FD515 /* PostCell.swift */,
 			);
 			path = Parstagram;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				3BF58C172605BF9A006DB826 /* AppDelegate.swift in Sources */,
 				3B0F69112605C1F2004FD515 /* FeedViewController.swift in Sources */,
 				3BF58C192605BF9A006DB826 /* SceneDelegate.swift in Sources */,
+				3B0F691E2605D742004FD515 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
